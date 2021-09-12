@@ -13,8 +13,8 @@
 </head>
 <body>
   <header>
-      <nav class="flex flex-wrap items-center justify-center bg-black w-full h-22 border-b-4 border-avji-color">
-          <div class="flex items-center w-auto">
+      <nav class="md:flex md:flex-wrap items-center justify-center bg-black w-full h-22 border-b-4 border-avji-color">
+          <div class="md:flex items-center md:w-auto hidden">
               <ul class="flex flex-1 items-center">
                   <li>
                       <a href="books.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НОМУУД</a>
@@ -26,7 +26,7 @@
                     <a href="news.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НИЙТЛЭЛ</a>
                 </li>
                 <li>
-                    <a href="index.html" class="inline-block py-2 px-6 cursor-pointer"><img src="img/logos/Logo.png" alt="" class="w-16"></a>
+                    <a href="index.html" class="inline-block pb-2 pt-4 px-6 cursor-pointer"><img src="img/logos/Logo.png" alt="" class="w-16"></a>
                 </li>
                 <li>
                     <a href="#" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">УНШИГЧДЫН БУЛАН</a>
@@ -39,6 +39,24 @@
                 </li>
               </ul>
           </div>
+      <!-- Mobile menu -->
+        <div class="flex flex-wrap items-center justify-between sm:hidden">
+          <img src="img/logos/Logo.png" alt="" class="w-16 py-2 pl-2">
+          <span class="ml-3 text-xl text-avji-color">AV<span class="text-white">JI</span> publishing</span>
+          <!-- Mobile Menu toggle button -->
+        <div class="block md:hidden">
+          <button class="pr-8 hover:text-gray-700" id="nav-toggle">
+            <svg
+              class="fill-current h-6 w-6 text-avji-color"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
       </nav>
   </header>
 <!-- Slide  -->
