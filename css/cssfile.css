@@ -5,7 +5,7 @@
   background: #2c3e50; /* darckblue */
 }
 .myslide {
-  height: 846px;
+  height: 100%;
   display: none;
   overflow: hidden;
 }
@@ -151,10 +151,7 @@
 /* /4 */
 
 /* 5 */
-@media screen and (max-width: 800px) {
-  .myslide {
-    height: 800px;
-  }
+
   .txt {
     letter-spacing: 2px;
     line-height: 25px;

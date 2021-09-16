@@ -16,23 +16,24 @@
       <nav class="md:flex md:flex-wrap items-center justify-center bg-black w-full h-22 border-b-4 border-avji-color">
           <div class="md:flex items-center md:w-auto hidden">
               <ul class="flex flex-1 items-center">
+                <li>
+                  <a href="home.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НҮҮР</a>
+              </li>
                   <li>
                       <a href="books.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НОМУУД</a>
                   </li>
                   <li>
                     <a href="made_book.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НОМ БҮТЭЭХ ҮЙЛЧИЛГЭЭ</a>
                 </li>                
-                <li>
-                    <a href="news.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НИЙТЛЭЛ</a>
-                </li>
+                
                 <li>
                     <a href="index.html" class="inline-block pb-2 pt-4 px-6 cursor-pointer"><img src="img/logos/Logo.png" alt="" class="w-16"></a>
                 </li>
                 <li>
-                    <a href="#" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">УНШИГЧДЫН БУЛАН</a>
-                </li>
+                  <a href="news.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НИЙТЛЭЛ</a>
+              </li>
                 <li>
-                    <a href="#about" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">БИДНИЙ ТУХАЙ</a>
+                    <a href="about.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">БИДНИЙ ТУХАЙ</a>
                 </li>
                 <li>
                     <a href="contact.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">ХОЛБОО БАРИХ</a>
@@ -40,21 +41,48 @@
               </ul>
           </div>
       <!-- Mobile menu -->
-        <div class="flex flex-wrap items-center justify-between sm:hidden">
-          <img src="img/logos/Logo.png" alt="" class="w-16 py-2 pl-2">
-          <span class="ml-3 text-xl text-avji-color">AV<span class="text-white">JI</span> publishing</span>
-          <!-- Mobile Menu toggle button -->
-        <div class="block md:hidden">
-          <button class="pr-8 hover:text-gray-700" id="nav-toggle">
-            <svg
-              class="fill-current h-6 w-6 text-avji-color"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+      <div class="relative md:flex md:hidden">
+
+        <!-- mobile menu bar -->
+        <div class="bg-black text-gray-100 flex justify-between md:hidden">
+          <!-- logo -->
+          <a href="index.html" class="block p-2 text-white font-bold"><img src="img/logos/AVJI mobile logo.png" alt="" class="md:hidden h-10"></a>
+      
+          <!-- mobile menu button -->
+          <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
+      
+        <!-- sidebar -->
+        <div id=sidebar class="sidebar  text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-x-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
+      
+          <!-- nav -->
+          <nav>
+            <a href="home.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НҮҮР
+            </a>
+            <a href="books.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НОМУУД
+            </a>
+            <a href="made_book.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НОМ БҮТЭЭХ ҮЙЛЧИЛГЭЭ
+            </a>
+            <a href="news.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НИЙТЛЭЛ
+            </a>
+            <a href="about.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              БИДНИЙ ТУХАЙ
+            </a> <a href="contact.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              ХОЛБОО БАРИХ
+            </a>
+          </nav>
+        </div>
+      
+    
+      
       </div>
 
       </nav>
@@ -67,7 +95,7 @@
             <h1>Амьдрал үзэсгэлэнтэй</h1>
             <button class="flex mx-auto mt-16 text-white bg-avji-color border-0 py-2 px-8 focus:outline-none hover:bg-avji-hover rounded text-lg">Дэлгэрэнгүй</button>
         </div> -->
-        <img src="img/cover01.jpg" class="w-full">
+        <img src="img/cover 1.png" class="w-full">
     </div>
     
     <div class="myslide fade">
@@ -122,36 +150,36 @@
 <section class="text-gray-600 body-font overflow-hidden">
     <div class="container px-5 py-10 mx-auto">
       <div class="flex flex-col items-center text-center w-full mb-6">
-        <h2 class="text-2xl font-medium text-gray-900">ШИНЭ & ТУН УДАХГҮЙ</h2>
-        <div class="w-28 pt-2 border-b-4 border-avji-color"></div>
+        <h2 class="md:text-2xl font-medium text-gray-900">ШИНЭ & ТУН УДАХГҮЙ</h2>
+        <div class="w-28 pt-2 md:border-b-4 border-b border-avji-color"></div>
       </div>
-    <div class="flex -m-4">
-        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-          <div class="h-full p-4 border-2 border-white relative overflow-hidden hover:border-avji-color">
+    <div class="flex -m-4 flex-wrap">
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-1/2">
+          <div class="h-full p-4 md:border-2 border rounded-lg md:border-white border-avji-color relative overflow-hidden hover:border-avji-color">
             <a href="" class="flex flex-col items-center"><div class="overflow-hidden"><img src="img/B2.png" alt="" class="transform hover:scale-110 transition duration-700 ease-in-out"></div>
-            <h2 class="text-avji-color title-font pt-2 font-bold uppercase">амьдрал үзэсгэлэнтэй</h2>
-            <p class="text-gray-600 text-lg">39,000₮</p></a>
+            <h2 class="text-avji-color title-font pt-2 font-bold uppercase text-xs text-center md:text-base">амьдрал үзэсгэлэнтэй</h2>
+            <p class="text-gray-600 md:text-lg">39,000₮</p></a>
           </div>
         </div>
-        <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-4 border-2 border-white relative overflow-hidden hover:border-avji-color">
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-1/2">
+            <div class="h-full p-4 md:border-2 border rounded-lg md:border-white border-avji-color relative overflow-hidden hover:border-avji-color">
               <a href="" class="flex flex-col items-center"><div class="overflow-hidden"><img src="img/B1.png" alt="" class="transform hover:scale-110 transition duration-700 ease-in-out"></div>
-              <h2 class="text-avji-color title-font pt-2 font-bold uppercase">эхлэхийн тулд төгсдөг</h2>
-              <p class="text-gray-600 text-lg">19,000₮</p></a>
+              <h2 class="text-avji-color title-font pt-2 font-bold uppercase text-xs text-center md:text-base">эхлэхийн тулд төгсдөг</h2>
+              <p class="text-gray-600 md:text-lg">19,000₮</p></a>
             </div>
           </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-4 border-2 border-white relative overflow-hidden hover:border-avji-color">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-1/2">
+            <div class="h-full p-4 md:border-2 border rounded-lg md:border-white border-avji-color relative overflow-hidden hover:border-avji-color">
               <a href="" class="flex flex-col items-center"><div class="overflow-hidden"><img src="img/B3.png" alt="" class="transform hover:scale-110 transition duration-700 ease-in-out"></div>
-              <h2 class="text-avji-color title-font pt-2 font-bold uppercase">ерөөлдэлгэр</h2>
-              <p class="text-gray-600 text-lg">19,000₮</p></a>
+              <h2 class="text-avji-color title-font pt-2 font-bold uppercase text-xs text-center md:text-base">ерөөлдэлгэр</h2><br>
+              <p class="text-gray-600 md:text-lg">19,000₮</p></a>
             </div>
           </div>
-          <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
-            <div class="h-full p-4 border-2 border-white relative overflow-hidden hover:border-avji-color">
+          <div class="p-4 xl:w-1/4 md:w-1/2 w-1/2">
+            <div class="h-full p-4 md:border-2 border rounded-lg md:border-white border-avji-color relative overflow-hidden hover:border-avji-color">
               <a href="" class="flex flex-col items-center"><div class="overflow-hidden"><img src="img/B4.png" alt="" class="transform hover:scale-110 transition duration-700 ease-in-out"></div>
-              <h2 class="text-avji-color title-font pt-2 font-bold uppercase">монте кристо гүн</h2>
-              <p class="text-gray-600 text-lg">29,000₮</p></a>
+              <h2 class="text-avji-color title-font pt-2 font-bold uppercase text-xs text-center md:text-base">монте кристо гүн</h2>
+              <p class="text-gray-600 md:text-lg">29,000₮</p></a>
             </div>
           </div>
      </div> 
@@ -162,8 +190,8 @@
 <section>
     <div class="container px-5 pb-10 mx-auto">
         <div class="flex flex-col items-center text-center w-full mb-4">
-          <h2 class="text-2xl font-medium text-gray-900 uppercase">ном бүтээх үйлчилгээ</h2>
-          <div class="w-28 pt-2 border-b-4 border-avji-color"></div>
+          <h2 class="md:text-2xl font-medium text-gray-900 uppercase">ном бүтээх үйлчилгээ</h2>
+          <div class="w-28 pt-2 md:border-b-4 border-b border-avji-color"></div>
         </div>
       <!-- 4 баннер эхлэл -->
         <div class="flex flex-wrap">
@@ -216,74 +244,61 @@
 <!-- Ном бүтээх үйлчилээ end -->
 <!-- Нийтлэл -->
 <section>
-    <div class="container px-5 pb-10 mx-auto">
-        <div class="flex flex-col items-center text-center w-full mb-6">
-          <h2 class="text-2xl font-medium text-gray-900">НИЙТЛЭЛ</h2>
-          <div class="w-28 pt-2 border-b-4 border-avji-color"></div>
+    <div class="container px-5 pb-12 md:mb-6 mx-auto">
+        <div class="flex flex-col items-center text-center w-full -mb-10">
+          <h2 class="md:text-2xl font-medium text-gray-900">НИЙТЛЭЛ</h2>
+          <div class="w-28 pt-2 md:border-b-4 border-b border-avji-color"></div>
         </div>
 
-        <div class="container px-5 mx-auto">
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-              <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div class="h-64 overflow-hidden">
-                  <img alt="content" class="object-cover object-center h-full w-full transform hover:scale-110 transition duration-700 ease-in-out" src="img/post 01.png">
-                </div>
-                <h2 class="text-xl text-center font-medium title-font text-gray-900 mt-5 h-14 overflow-hidden">“ЗУНЫГ НОМТОЙ ӨНГӨРҮҮЛЬЕ - 2021” АЯН ЭХЭЛЖ БАЙНА</h2>
-                <p class="text-base leading-relaxed mt-2 h-32 overflow-hidden text-justify"> “Монсудар” хэвлэлийн газраас жил болгон зохион байгуулдаг “Соён гэгээрлийн өдрүүд” энэ зургадугаар сарын 17-27-ны хооронд зохион байгуулагдах гэж байна. Тус аяны хүрээнд “Зуныг номтой өнгөрүүлье” уриан дор дараах хөтөлбөрийг танилцуулж байна.
-
-                    Энэ өдрүүдэд “Монсудар” хэвлэлийн газраас шинээр эрхлэн гаргасан номуудын танилцуулга, нээлт болон орчуулагчдын ярилцлага, “Утга зохиол дахь хайр”-ын тухай сонирхолтой нийтлэл, таавар тоглоом, болон алдагдсан номыг олох зэрэг сонирхолтой, үр өгөөжтэй, оюунлаг өдрүүдийг өнгөрүүлэх боломжтой.</p>
-                <a class="text-gray-800 inline-flex items-center mt-3">Дэлгэрэнгүй
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-
-              <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div class="h-64 overflow-hidden">
-                  <img alt="content" class="object-cover object-center h-full w-full transform hover:scale-110 transition duration-700 ease-in-out" src="img/post 02.png">
-                </div>
-                <h2 class="text-xl text-center font-medium title-font text-gray-900 mt-5 h-14 overflow-hidden">ЗОХИОЛЫН УРАЛДААН: МОНГОЛООС АЛДАГДСАН ЗҮЙЛИЙН ЖАГСААЛТ</h2>
-                <p class="text-base leading-relaxed mt-2 h-32 overflow-hidden text-justify"> Өнөөдөр органик, байгалийн гаралтай, хүнсний нэмэлтгүй бүтээгдэхүүн аль болох хэрэглэх ёстой болсон учраас дэлгүүрийн лангуун дээр байгаа жигнэмэг өрмөнцөр, цэлцгэнүүр, чипс, лаазалж савласан сүмс, амтлагч гээд бэлэн бүтээгдэхүүнийг гэртээ хийх боломжтой, энэ бүхний жор, арга технологи энэ номд бий. Ямар хүнс ногоог яаж болговол доторх шим тэжээл нь бага алдагддаг гээд ер нь л суралцах зүйл бишгүй олон.</p>
-                <a class="text-gray-800 inline-flex items-center mt-3">Дэлгэрэнгүй
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-
-              <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-                <div class="h-64 overflow-hidden">
-                  <img alt="content" class="object-cover object-center h-full w-full transform hover:scale-110 transition duration-700 ease-in-out" src="img/post 03.png">
-                </div>
-                <h2 class="text-xl text-center font-medium title-font text-gray-900 mt-5 h-14 overflow-hidden">ЭХ ХЭЛНИЙ СОЁН ГЭГЭЭРЭЛ: НЭР ТОМЬЁОНЫ НЭВТЭРХИЙ ТОЛЬ БИЧГҮҮД ГАРСНААР ТУХАЙН САЛБАР ЦЭГЦТЭЙ ХӨГЖИЖ ЭХЭЛНЭ
-                </h2>
-                <p class="text-base leading-relaxed mt-2 h-32 overflow-hidden text-justify"> Б.Одончимэг: Уг толь бичиг нь 4000 гаруй толгой үг, 2500 орчим жор, 1200 гаруй хар болон өнгөт зурагтай. 4000 орчим толгой үг гэдэг нь дэлхий даяар буй хэдэн зуун нэр төрлийн хүнсний ногоо, жимс жимсгэнэ, үр тариа, самар мөөг, мах загас гэхчлэн түүхий эд болон дарс, бяслаг, зайдас, нарийн боов, амттан гэх мэт бүтээгдэхүүн; хоол хүнсийг боловсруулах технологи, сав суулгын талаар дэлгэрэнгүй өгүүлсэн.
-
-                   
-                    
-                    Мөн Монгол улсын зөвлөх инженер Д.Саруул, Хөдөө</p>
-                <a class="text-gray-800 inline-flex items-center mt-3">Дэлгэрэнгүй
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
-              
-            </div>
+        <!-- Box -->
+    <div class="md:flex md:justify-center md:space-x-8 md:px-14">
+      <!-- box-1 -->
+      <div class="mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
+        <div class="w-sm">
+          <img class="w-64" src="img/post 01.png" alt="" />
+          <div class="mt-4 text-avji-color text-center">
+            <h1 class="text-xl font-medium">Та "ТОП ФЕН" болж амжсан уу?</h1>
+            <p class="mt-2 text-gray-600 h-24 overflow-hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, vel, veniam hic sunt cumque aliquam eius ipsa consectetur quod repellendus doloremque laudantium facilis ex placeat quam tenetur, quidem in porro?</p>
+            <button class="h-8 mt-4 mb-2 px-10 rounded-full bg-avji-color text-white  hover:bg-avji-hover transition duration-200">Дэлгэрэнгүй</button>
           </div>
+        </div>
+      </div>
+
+      <!-- box-2 -->
+      <div class="mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
+        <div class="w-sm">
+          <img class="w-64" src="img/post 02.png" alt="" />
+          <div class="mt-4 text-avji-color text-center">
+            <h1 class="text-xl font-medium">АВЖИ Паблишн -н аль номыг нь уншсан бэ?</h1>
+            <p class="mt-2 text-gray-600 h-24 overflow-hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, vel, veniam hic sunt cumque aliquam eius ipsa consectetur quod repellendus doloremque laudantium facilis ex placeat quam tenetur, quidem in porro?</p>
+            <button class="h-8 mt-4 mb-2 px-10 rounded-full bg-avji-color text-white  hover:bg-avji-hover transition duration-200">Дэлгэрэнгүй</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- box-3 -->
+      <div class="mt-16 py-4 px-4 bg-whit w-72 bg-white rounded-xl shadow-lg hover:shadow-xl transform hover:scale-110 transition duration-500 mx-auto md:mx-0">
+        <div class="w-sm">
+          <img class="w-64" src="img/post03.jpg" alt="" />
+          <div class="mt-4 text-avji-color text-center">
+            <h1 class="text-xl font-medium">"Амьдрал үзэсгэлэнтэй" номын хэсгээс ...</h1>
+            <p class="mt-2 text-gray-600 h-24 overflow-hidden">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, vel, veniam hic sunt cumque aliquam eius ipsa consectetur quod repellendus doloremque laudantium facilis ex placeat quam tenetur, quidem in porro?</p>
+            <button class="h-8 mt-4 mb-2 px-10 rounded-full bg-avji-color text-white  hover:bg-avji-hover transition duration-200">Дэлгэрэнгүй</button>
+          </div>
+        </div>
+      </div>
+    </div>
 </section>
 <!-- Нийтлэл end-->
 <!-- Banner -->
-<div class="relative flex flex-wrap items-center h-96">
-    <div class="absolute inset-0 w-full h-96 ">
+<div class="flex flex-wrap items-center">
       <img
-        src="img/banner.jpg"
-        class="object-cover w-full h-96 overflow-hidden"
+        src="img/banner002.png"
+        class="object-cover w-full h-full overflow-hidden"
         alt=""
       />
-    </div>
-    <div
+
+    <!-- <div
       class="container mx-auto text-center text-white w-full flex flex-wrap z-10"
     >
       <h3
@@ -292,15 +307,15 @@
         Сурталчилгааны гарчиг
       </h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique officia dolor mollitia libero vel unde nobis, voluptatum, sed maxime molestias illo, dolorum minima itaque natus a dignissimos ipsum? Suscipit commodi quos soluta veritatis error quo consequuntur hic facilis. Ex laborum corporis quis voluptatem repellat asperiores alias at dolores! Nam quae et in odit enim doloremque optio, facilis asperiores laudantium dolorum! A neque magnam esse natus.</p>
-    </div>
+    </div> -->
   </div>
 <!-- Banner end-->
 <!-- About -->
 <section class="flex" id="about">
 <div class="container px-5 py-14 mx-auto">
     <div class="flex flex-col items-center text-center w-full mb-6">
-      <h2 class="text-2xl font-medium text-gray-900">БИДНИЙ ТУХАЙ</h2>
-      <div class="w-28 pt-2 border-b-4 border-avji-color"></div>
+      <h2 class="md:text-2xl font-medium text-gray-900">БИДНИЙ ТУХАЙ</h2>
+      <div class="w-28 pt-2 md:border-b-4 border-b border-avji-color"></div>
     </div>
 
     <main class="bg-light-blue">
@@ -312,7 +327,7 @@
                   @click="handleClick()"
                   class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
                 >
-                  <span>АВЖИ Паблишн компанийн алсын хараа:</span>
+                  <span>Алсын хараа:</span>
                   <svg
                     :class="handleRotate()"
                     class="fill-current text-avji-color h-6 w-6 transform transition-transform duration-500"
@@ -461,7 +476,7 @@
       </main>
 </section>
 <!-- Footer -->
-<footer class="bg-black text-avji-color body-font">
+<footer class="bg-black text-avji-color body-font border-t-4 border-avji-color">
     <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
       <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-avji-color">
@@ -476,17 +491,17 @@
           <h2 class="title-font font-medium text-avji-color tracking-widest mb-3">ҮНДСЭН ЦЭС</h2>
           <nav class="list-none mb-10">
             <li class="pb-1">
-              <a class="text-gray-100 hover:text-avji-color uppercase" href="home.html"><i class="fas fa-caret-right pr-2"></i>Нүүр</a>
+              <a class="text-gray-100 hover:text-avji-color uppercase" href="home.html"><i class="fas fa-bookmark pr-2"></i>Нүүр</a>
             </li>
             <li class="pb-1">
-              <a class="text-gray-100 hover:text-avji-color uppercase" href="books.html"><i class="fas fa-caret-right pr-2"></i>Номууд</a>
+              <a class="text-gray-100 hover:text-avji-color uppercase" href="books.html"><i class="fas fa-bookmark pr-2"></i>Номууд</a>
             </li>
             <li class="pb-1">
-              <a class="text-gray-100 hover:text-avji-color uppercase" href="made_book.html"><i class="fas fa-caret-right pr-2"></i>Ном бүтээх үйлчилгээ</a>
+              <a class="text-gray-100 hover:text-avji-color uppercase" href="made_book.html"><i class="fas fa-bookmark pr-2"></i>Ном бүтээх үйлчилгээ</a>
             </li>
            
             <li class="pb-1">
-              <a class="text-gray-100 hover:text-avji-color uppercase" href="news.html"><i class="fas fa-caret-right pr-2"></i>Нийтлэл</a>
+              <a class="text-gray-100 hover:text-avji-color uppercase" href="news.html"><i class="fas fa-bookmark pr-2"></i>Нийтлэл</a>
             </li>
           </nav>
         </div>
@@ -495,8 +510,8 @@
           <nav class="list-none mb-10">
             <li>
               <a class="text-gray-100 text-sm"><i class="fas fa-map-marker-alt pr-2"></i>Хаяг: "АВЖИ Паблишн" ХХК, Улаанбаатар хот-15172
-                Чингэлтэй дүүрэг, <br>3-р хороо, 
-                Энх тайвны өргөн чөлөө, Peace tower,
+                Чингэлтэй дүүрэг, 3-р хороо, 
+                Энх тайвны өргөн чөлөө, <br>Peace tower,
                 16 давхарт 1606 тоот</a>
             </li>
             <li>
@@ -547,6 +562,20 @@
   </footer>
   <!-- Footer End -->
 <script src="js/jsfile.js"></script>
+<script>
+  // grab everything we need
+const btn = document.querySelector(".mobile-menu-button");
+const sidebar = document.querySelector(".sidebar");
+
+// add our event listener for the click
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("-translate-x-full");
+});
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("relative");
+});
+
+</script>
 <script>
     document.addEventListener('alpine:init', () => {
       Alpine.store('accordion', {

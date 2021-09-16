@@ -13,48 +13,94 @@
 </head>
 <body>
   <header>
-      <nav class="flex flex-wrap items-center justify-center bg-black w-full h-22 border-b-4 border-avji-color">
-          <div class="flex items-center w-auto">
+      <nav class="md:flex md:flex-wrap items-center justify-center bg-black w-full h-22 border-b-4 border-avji-color">
+          <div class="md:flex items-center md:w-auto hidden">
               <ul class="flex flex-1 items-center">
+                <li>
+                  <a href="home.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НҮҮР</a>
+              </li>
                   <li>
                       <a href="books.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НОМУУД</a>
                   </li>
                   <li>
                     <a href="made_book.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НОМ БҮТЭЭХ ҮЙЛЧИЛГЭЭ</a>
                 </li>                
+                
                 <li>
-                    <a href="news.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НИЙТЛЭЛ</a>
+                    <a href="index.html" class="inline-block pb-2 pt-4 px-6 cursor-pointer"><img src="img/logos/Logo.png" alt="" class="w-16"></a>
                 </li>
                 <li>
-                    <a href="home.html" class="inline-block py-2 px-6 cursor-pointer"><img src="img/logos/Logo.png" alt="" class="w-16"></a>
-                </li>
+                  <a href="news.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НИЙТЛЭЛ</a>
+              </li>
                 <li>
-                    <a href="#" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">УНШИГЧДЫН БУЛАН</a>
-                </li>
-                <li>
-                    <a href="#" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">БИДНИЙ ТУХАЙ</a>
+                    <a href="about.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">БИДНИЙ ТУХАЙ</a>
                 </li>
                 <li>
                     <a href="contact.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">ХОЛБОО БАРИХ</a>
                 </li>
               </ul>
           </div>
+      <!-- Mobile menu -->
+      <div class="relative md:flex md:hidden">
+
+        <!-- mobile menu bar -->
+        <div class="bg-black text-gray-100 flex justify-between md:hidden">
+          <!-- logo -->
+          <a href="index.html" class="block p-2 text-white font-bold"><img src="img/logos/AVJI mobile logo.png" alt="" class="md:hidden h-10"></a>
+      
+          <!-- mobile menu button -->
+          <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      
+        <!-- sidebar -->
+        <div id=sidebar class="sidebar  text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-x-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
+      
+          <!-- nav -->
+          <nav>
+            <a href="home.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НҮҮР
+            </a>
+            <a href="books.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НОМУУД
+            </a>
+            <a href="made_book.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НОМ БҮТЭЭХ ҮЙЛЧИЛГЭЭ
+            </a>
+            <a href="news.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НИЙТЛЭЛ
+            </a>
+            <a href="about.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              БИДНИЙ ТУХАЙ
+            </a> <a href="contact.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              ХОЛБОО БАРИХ
+            </a>
+          </nav>
+        </div>
+      
+    
+      
+      </div>
+
       </nav>
   </header>
 
   <!-- Ном бүтээх үйлчилээ -->
 <section>
-    <div class="container px-5 py-14 mx-auto">
-        <div class="flex flex-col items-center text-center w-full mb-6">
-          <h2 class="text-2xl font-medium text-gray-900 uppercase">ном бүтээх үйлчилгээ</h2>
-          <div class="w-28 pt-2 border-b-4 border-avji-color"></div>
+    <div class="container px-5 md:py-10 py-4 mx-auto">
+        <div class="flex flex-col items-center text-center w-full ">
+          <h2 class="md:text-2xl font-medium text-gray-900 uppercase"><i class="fas fa-address-book pr-2"></i>ном бүтээх үйлчилгээ</h2>
+          <div class="w-28  md:border-b-4 border-b border-avji-color"></div>
         </div>
         
         <!-- component -->
 <!-- 4 баннер эхлэл -->
 <div class="flex flex-wrap">
   <div class="p-4 md:w-1/2 w-full">
-        <a href=""><img src="img/make01.png" alt="" class="w-full transform hover:scale-105 transition duration-700 ease-in-out"></a>
+        <a href="firstbook.html"><img src="img/make01.png" alt="" class="w-full transform hover:scale-105 transition duration-700 ease-in-out"></a>
           <!-- Begin Transparent Alert -->
           <!-- <div class="flex justify-center bg-white backdrop-filter backdrop-blur-md bg-opacity-25 rounded-full text-center p-4 mt-2">
               <span class="text-white text-lg font-semibold">
@@ -96,95 +142,135 @@
   
 
 
-<script src="https://kit.fontawesome.com/1e268974cb.js" crossorigin="anonymous"></script>
-<script src="assets/js/helpers.js"></script>
-<script src="assets/js/whatsapp.js"></script>
+
 </section>
 <!-- Ном бүтээх үйлчилээ end -->
 <!-- Footer -->
-<footer class="bg-black text-avji-color body-font">
-    <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-        <a class="flex title-font font-medium items-center md:justify-start justify-center text-avji-color">
-          <img src="img/logos/Logo.png" alt="" class="w-14">
-          <span class="ml-3 text-xl">AV<span class="text-white">JI</span> publishing</span>
-        </a>
-        <p class="mt-2 text-sm text-white">АВЖИ гэдэг нэр нь ААВ, ЭЭЖ хэмээх хоёр үгний нэгдэл бөгөөд арга билгийн ухааны бэлгэдэл юм.</p>
-      </div>
-      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+<footer class="bg-black text-avji-color body-font border-t-4 border-avji-color">
+  <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-avji-color">
+        <img src="img/logos/Logo.png" alt="" class="w-14">
+        <span class="ml-3 text-xl">AV<span class="text-white">JI</span> publishing</span>
+      </a>
+      <p class="mt-2 text-sm text-white">АВЖИ гэдэг нэр нь ААВ, ЭЭЖ хэмээх хоёр үгний нэгдэл бөгөөд арга билгийн ухааны бэлгэдэл юм.</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+  
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4 text-sm ">
+        <h2 class="title-font font-medium text-avji-color tracking-widest mb-3">ҮНДСЭН ЦЭС</h2>
+        <nav class="list-none mb-10">
+          <li class="pb-1">
+            <a class="text-gray-100 hover:text-avji-color uppercase" href="home.html"><i class="fas fa-bookmark pr-2"></i>Нүүр</a>
+          </li>
+          <li class="pb-1">
+            <a class="text-gray-100 hover:text-avji-color uppercase" href="books.html"><i class="fas fa-bookmark pr-2"></i>Номууд</a>
+          </li>
+          <li class="pb-1">
+            <a class="text-gray-100 hover:text-avji-color uppercase" href="made_book.html"><i class="fas fa-bookmark pr-2"></i>Ном бүтээх үйлчилгээ</a>
+          </li>
          
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">ҮНДСЭН ЦЭС</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-          <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">ХОЛБОО БАРИХ</h2>
-          <nav class="list-none mb-10">
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">First Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Second Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Third Link</a>
-            </li>
-            <li>
-              <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
-            </li>
-          </nav>
-        </div>
-        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
-                <a href="https://www.facebook.com/avjipublishing" class="text-avji-color hover:text-white transition-colors duration-700 ease-out">
-                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
-                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
-                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
-                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
-                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-                  </svg>
-                </a>
-                <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
-                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-7 h-7" viewBox="0 0 24 24">
-                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
-                  </svg>
-                </a>
-              </span>
-        </div>
+          <li class="pb-1">
+            <a class="text-gray-100 hover:text-avji-color uppercase" href="news.html"><i class="fas fa-bookmark pr-2"></i>Нийтлэл</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-2/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-avji-color tracking-widest text-sm mb-3">ХОЛБОО БАРИХ</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-100 text-sm"><i class="fas fa-map-marker-alt pr-2"></i>Хаяг: "АВЖИ Паблишн" ХХК, Улаанбаатар хот-15172
+              Чингэлтэй дүүрэг, 3-р хороо, 
+              Энх тайвны өргөн чөлөө, <br>Peace tower,
+              16 давхарт 1606 тоот</a>
+          </li>
+          <li>
+            <a class="text-gray-100 text-sm"><i class="fas fa-phone-alt pr-2"></i></i>Утас: 99003506</a>
+          </li>
+          <li>
+            <a class="text-gray-100 text-sm"><i class="fas fa-envelope pr-2"></i>И-мэйл: info@avjipublishing.com</a>
+          </li>
+         
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-end sm:justify-start">
+              <a href="https://www.facebook.com/avjipublishing" class="text-avji-color hover:text-white transition-colors duration-700 ease-out">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+              </a>
+              <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-7 h-7" viewBox="0 0 24 24">
+                  <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                  <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+              </a>
+            </span>
       </div>
     </div>
-    <div class="bg-gray-100">
-      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
-        <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 Бүх эрх хуулиар хамгаалагдсан —
-          <a href="https://www.facebook.com/idesign.lhagva.5/" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">iDesign Lhagva</a>
-        </p>
-        
-      </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 Бүх эрх хуулиар хамгаалагдсан —
+        <a href="https://www.facebook.com/idesign.lhagva.5/" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">iDesign Lhagva</a>
+      </p>
+      
     </div>
-  </footer>
-  <!-- Footer End -->
-  </body>
+  </div>
+</footer>
+<!-- Footer End -->
+<script src="https://kit.fontawesome.com/1e268974cb.js" crossorigin="anonymous"></script>
+<script src="assets/js/helpers.js"></script>
+<script src="assets/js/whatsapp.js"></script>
+<script src="js/jsfile.js"></script>
+<script>
+// grab everything we need
+const btn = document.querySelector(".mobile-menu-button");
+const sidebar = document.querySelector(".sidebar");
+
+// add our event listener for the click
+btn.addEventListener("click", () => {
+sidebar.classList.toggle("-translate-x-full");
+});
+btn.addEventListener("click", () => {
+sidebar.classList.toggle("relative");
+});
+
+</script>
+<script>
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('accordion', {
+      tab: 0
+    });
+    
+    Alpine.data('accordion', (idx) => ({
+      init() {
+        this.idx = idx;
+      },
+      idx: -1,
+      handleClick() {
+        this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+      },
+      handleRotate() {
+        return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+      },
+      handleToggle() {
+        return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+      }
+    }));
+  })
+</script>
+</body>
+</html>

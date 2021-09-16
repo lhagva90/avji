@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logos/Logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/cssfile.css">
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <title>AVJI publishing</title>
+</head>
+<body>
+  <header>
+      <nav class="md:flex md:flex-wrap items-center justify-center bg-black w-full h-22 border-b-4 border-avji-color">
+          <div class="md:flex items-center md:w-auto hidden">
+              <ul class="flex flex-1 items-center">
+                <li>
+                  <a href="home.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НҮҮР</a>
+              </li>
+                  <li>
+                      <a href="books.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НОМУУД</a>
+                  </li>
+                  <li>
+                    <a href="made_book.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НОМ БҮТЭЭХ ҮЙЛЧИЛГЭЭ</a>
+                </li>                
+                
+                <li>
+                    <a href="index.html" class="inline-block pb-2 pt-4 px-6 cursor-pointer"><img src="img/logos/Logo.png" alt="" class="w-16"></a>
+                </li>
+                <li>
+                  <a href="news.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НИЙТЛЭЛ</a>
+              </li>
+                <li>
+                    <a href="about.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">БИДНИЙ ТУХАЙ</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">ХОЛБОО БАРИХ</a>
+                </li>
+              </ul>
+          </div>
+      <!-- Mobile menu -->
+      <div class="relative md:flex md:hidden">
+
+        <!-- mobile menu bar -->
+        <div class="bg-black text-gray-100 flex justify-between md:hidden">
+          <!-- logo -->
+          <a href="#" class="block p-2 text-white font-bold"><img src="img/logos/AVJI mobile logo.png" alt="" class="md:hidden h-10"></a>
+      
+          <!-- mobile menu button -->
+          <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      
+        <!-- sidebar -->
+        <div id=sidebar class="sidebar  text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-x-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
+      
+          <!-- nav -->
+          <nav>
+            <a href="home.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НҮҮР
+            </a>
+            <a href="books.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НОМУУД
+            </a>
+            <a href="made_book.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НОМ БҮТЭЭХ ҮЙЛЧИЛГЭЭ
+            </a>
+            <a href="news.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НИЙТЛЭЛ
+            </a>
+            <a href="about.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              БИДНИЙ ТУХАЙ
+            </a> <a href="contact.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              ХОЛБОО БАРИХ
+            </a>
+          </nav>
+        </div>
+      
+    
+      
+      </div>
+
+      </nav>
+  </header>
