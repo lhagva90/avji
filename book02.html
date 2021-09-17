@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logos/Logo.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/cssfile.css">
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <title>AVJI publishing</title>
+</head>
+<body>
+  <header>
+      <nav class="md:flex md:flex-wrap items-center justify-center bg-black w-full h-22 border-b-4 border-avji-color">
+          <div class="md:flex items-center md:w-auto hidden">
+              <ul class="flex flex-1 items-center">
+                <li>
+                  <a href="home.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НҮҮР</a>
+              </li>
+                  <li>
+                      <a href="books.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium text-base hover:text-avji-color transition-colors duration-700 ease-out">НОМУУД</a>
+                  </li>
+                  <li>
+                    <a href="made_book.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НОМ БҮТЭЭХ ҮЙЛЧИЛГЭЭ</a>
+                </li>                
+                
+                <li>
+                    <a href="index.html" class="inline-block pb-2 pt-4 px-6 cursor-pointer"><img src="img/logos/Logo.png" alt="" class="w-16"></a>
+                </li>
+                <li>
+                  <a href="news.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">НИЙТЛЭЛ</a>
+              </li>
+                <li>
+                    <a href="about.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">БИДНИЙ ТУХАЙ</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="inline-block py-2 px-6 cursor-pointer text-white font-medium hover:text-avji-color transition-colors duration-700 ease-out">ХОЛБОО БАРИХ</a>
+                </li>
+              </ul>
+          </div>
+      <!-- Mobile menu -->
+      <div class="relative md:flex md:hidden">
+
+        <!-- mobile menu bar -->
+        <div class="bg-black text-gray-100 flex justify-between md:hidden">
+          <!-- logo -->
+          <a href="#" class="block p-2 text-white font-bold"><img src="img/logos/AVJI mobile logo.png" alt="" class="md:hidden h-10"></a>
+      
+          <!-- mobile menu button -->
+          <button class="mobile-menu-button p-4 focus:outline-none focus:bg-gray-700">
+            <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      
+        <!-- sidebar -->
+        <div id=sidebar class="sidebar  text-blue-100 w-64 space-y-6 py-7 px-2 absolute inset-x-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
+      
+          <!-- nav -->
+          <nav>
+            <a href="home.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НҮҮР
+            </a>
+            <a href="books.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НОМУУД
+            </a>
+            <a href="made_book.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НОМ БҮТЭЭХ ҮЙЛЧИЛГЭЭ
+            </a>
+            <a href="news.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              НИЙТЛЭЛ
+            </a>
+            <a href="about.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              БИДНИЙ ТУХАЙ
+            </a> <a href="contact.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-avji-color hover:text-white">
+              ХОЛБОО БАРИХ
+            </a>
+          </nav>
+        </div>
+      
+    
+      
+      </div>
+
+      </nav>
+  </header>
+  <!-- Header end -->
+
+  <section class="text-gray-600 body-font overflow-hidden">
+    <div class="container px-5 py-4 mx-auto">
+      <div class="lg:w-3/5 mx-auto flex flex-wrap">
+        <img alt="ecommerce" class="md:mt-8 lg:w-1/3 w-full h-full object-center rounded" src="img/B1.png">
+        <div class="lg:w-2/3 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+          <h2 class="text-sm title-font text-gray-500 tracking-widest">Коллин Хүүвэр</h2>
+          <h1 class="text-gray-900 text-2xl title-font font-base mb-1 uppercase">Эхлэхийн тулд төгсдөг</h1>
+          <div class="flex mb-4">
+            <span class="flex items-center">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-avji-color" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-avji-color" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-avji-color" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-avji-color" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-avji-color" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+             
+            
+          </div>
+          <p class="leading-relaxed text-justify text-base"><i class="far fa-check-circle pr-2"></i>Нью-Йорк Таймсын бестселлер зохиолч Коллин Хүүвэрийн 2016 онд бичсэн, одоо ч Амазоны шилдэг борлуулалттай номын хоёрдугаарт жагсаж буй, дэлхийн 20 гаруй хэл дээр орчуулагдсан “Эхлэхийн тулд төгсдөг” ном Монгол уншигчдынхаа гарт хүрэхэд бэлэн боллоо.
+            <br>
+            <i class="far fa-check-circle pr-2"></i>Энэхүү ном нь хайр дурлалтай учрахыг хүсэж буй төдийгүй учирсан хэн бүхэнд зориулагдсан бөгөөд хайр дурлалыг сохроор биш, бодитоор харахад, мөн амьдралынхаа шийдвэрлэх мөчүүдэд өөрийн үнэ цэнийг мэдэрсэн шийдвэрийг хэрхэн зоригтой гаргах хэрэгтэй талаар дүрсэлсэн үргэлжилсэн үгийн зохиол юм.
+            <br>
+            <i class="far fa-check-circle pr-2"></i>Зохиолч Коллин Хүүвэрийн олон шилдэг бүтээл дундаас энэхүү ном нь түүний амьдралын бодит түүхээс сэдэвлэснээрээ тун онцлог билээ.
+            </p>
+            <!-- <ul class="flex flex-col">
+                <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span>Зохиогчийн тухай:</span>
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-avji-color h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                    </svg>
+                  </h2>
+                  <div
+                    x-ref="tab"
+                    :style="handleToggle()"
+                    class="border-l-2 border-avji-color overflow-hidden max-h-0 duration-500 transition-all"
+                  >
+                    <p class="p-3 text-gray-900">
+                        Зохиогч О.Мөнхзаяа нь АНУ-ын “Гранд Серкл” корпорацийн бизнесийн үйл ажиллагаа хариуцсан
+                        дэд ерөнхийлөгчөөр ажилладаг. <br>АВЖИ Паблишн ХХК-ийн үүсгэн байгуулагч.
+                        Бизнесийн удирдлага болон төслийн менежментээр 21 дэх жилдээ мэргэшин ажиллаж байгаа,
+                        карьерын зөвлөгөө, байгууллагын соёл, хэрэглэгчийн үйлчилгээгээр дагнасан бизнесийн сургагч
+                        багш юм.
+                        <br>- 2001 онд Хүмүүнлэгийн ухааны их сургуулийг Англи-орос хэлний багшаар төгссөн,
+                        <br>- 2012 онд АНУ-ын Портландын их сургуулийн бизнесийн байгууллагын манлайллын хөтөлбөрийг
+                        дүүргэсэн,
+                        <br>- 2015 онд Шихихутуг их сургуулийг эрх зүйч мэргэжлээр төгссөн,
+                        <br>- 2021 онд АНУ-ын Жорж Вашингтоны Их Сургуулийн хуулийн сургуулийн магистрант.<br>
+                        Шилдэг борлуулалттай номын зохиолчид болох
+                        - Колин Хүүверийн “Биднээр дуусна” (It Ends with Us);
+                        - Жэй К Пэйлетнэрийн “Хүүхдүүдийн ааваасаа хүсдэг 52 зүйл” (52 things kids need from a Dad)
+                        номуудыг англи хэлнээс орчуулж, монгол уншигчдадаа хүргэсэн билээ.
+                        
+                    </p>
+                  </div>
+                </li> -->
+                <!-- <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer" -->
+                  
+                    <!-- <span>Эрхэм зорилго:</span>
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-avji-color h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="border-l-2 border-avji-color overflow-hidden max-h-0 duration-500 transition-all"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-gray-900">
+                      - Хүнийг эрхэмлэн дээдлэх үзэл хандлагыг ажиллаж буй бүх түвшиндээ хэрэгжүүлнэ.
+                      <br>
+                      - Гадаад, дотоодын зохиолчдын зохиогчийн эрх, оюуны өмчийг хүндэтгэн, хуулийн хүрээнд үйл ажиллагаа явуулна.
+                    </p>
+                  </div>
+                </li>
+                <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span>Үнэт зүйл:</span>
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-avji-color h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="border-l-2 border-avji-color overflow-hidden max-h-0 duration-500 transition-all"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-gray-900">
+                      - Нээлттэй, ил тод, шударга харилцаа<br>
+                      - Бүтээлч хамтын ажиллагаа<br>
+                      - Нийгмийн хариуцлага 
+                    </p>
+                  </div>
+                </li> -->
+                <!-- <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span>How do I make changes to an existing order?</span>
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-gray-900">
+                      Changes to an existing order can be made as long as the order is still in “processing” status. Please contact our team via email and we’ll make sure to apply the needed changes. If your order has already been shipped, we cannot apply any changes to it. If you are unhappy with your order when it arrives, please contact us for any changes you may require.
+                    </p>
+                  </div>
+                </li>
+                <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span>What shipping options do you have?</span>
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-gray-900">
+                      For USA domestic orders we offer FedEx and USPS shipping.
+                    </p>
+                  </div>
+                </li>
+                <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
+                  <h2
+                    @click="handleClick()"
+                    class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                  >
+                    <span>What payment methods do you accept?</span>
+                    <svg
+                      :class="handleRotate()"
+                      class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                    </svg>
+                  </h2>
+                  <div
+                    class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                    x-ref="tab"
+                    :style="handleToggle()"
+                  >
+                    <p class="p-3 text-gray-900">
+                      Any method of payments acceptable by you. For example: We accept MasterCard, Visa, American Express, PayPal, JCB Discover, Gift Cards, etc.
+                    </p>
+                  </div>
+                </li> -->
+              </ul>
+          
+          <div class="flex mt-4">
+            <span class="title-font font-medium text-2xl text-gray-900">25.000₮</span>
+            <button class="flex ml-auto text-white bg-avji-color border-0 py-2 px-6 focus:outline-none hover:bg-avji-hover rounded-full">Худалдаж авах</button>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+<footer class="bg-black text-avji-color body-font border-t-4 border-avji-color">
+    <div class="container px-5 py-12 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-avji-color">
+          <img src="img/logos/Logo.png" alt="" class="w-14">
+          <span class="ml-3 text-xl">AV<span class="text-white">JI</span> publishing</span>
+        </a>
+        <p class="mt-2 text-sm text-white">АВЖИ гэдэг нэр нь ААВ, ЭЭЖ хэмээх хоёр үгний нэгдэл бөгөөд арга билгийн ухааны бэлгэдэл юм.</p>
+      </div>
+      <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+    
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4 text-sm ">
+          <h2 class="title-font font-medium text-avji-color tracking-widest mb-3">ҮНДСЭН ЦЭС</h2>
+          <nav class="list-none mb-10">
+            <li class="pb-1">
+              <a class="text-gray-100 hover:text-avji-color uppercase" href="home.html"><i class="fas fa-bookmark pr-2"></i>Нүүр</a>
+            </li>
+            <li class="pb-1">
+              <a class="text-gray-100 hover:text-avji-color uppercase" href="books.html"><i class="fas fa-bookmark pr-2"></i>Номууд</a>
+            </li>
+            <li class="pb-1">
+              <a class="text-gray-100 hover:text-avji-color uppercase" href="made_book.html"><i class="fas fa-bookmark pr-2"></i>Ном бүтээх үйлчилгээ</a>
+            </li>
+           
+            <li class="pb-1">
+              <a class="text-gray-100 hover:text-avji-color uppercase" href="news.html"><i class="fas fa-bookmark pr-2"></i>Нийтлэл</a>
+            </li>
+          </nav>
+        </div>
+        <div class="lg:w-2/4 md:w-1/2 w-full px-4">
+          <h2 class="title-font font-medium text-avji-color tracking-widest text-sm mb-3">ХОЛБОО БАРИХ</h2>
+          <nav class="list-none mb-10">
+            <li>
+              <a class="text-gray-100 text-sm"><i class="fas fa-map-marker-alt pr-2"></i>Хаяг: "АВЖИ Паблишн" ХХК, Улаанбаатар хот-15172
+                Чингэлтэй дүүрэг, 3-р хороо, 
+                Энх тайвны өргөн чөлөө, <br>Peace tower,
+                16 давхарт 1606 тоот</a>
+            </li>
+            <li>
+              <a class="text-gray-100 text-sm"><i class="fas fa-phone-alt pr-2"></i></i>Утас: 99003506</a>
+            </li>
+            <li>
+              <a class="text-gray-100 text-sm"><i class="fas fa-envelope pr-2"></i>И-мэйл: info@avjipublishing.com</a>
+            </li>
+           
+          </nav>
+        </div>
+        <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-end sm:justify-start">
+                <a href="https://www.facebook.com/avjipublishing" class="text-avji-color hover:text-white transition-colors duration-700 ease-out">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-avji-color hover:text-white transition-colors duration-700 ease-out">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-7 h-7" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+        <p class="text-gray-500 text-sm text-center sm:text-left">© 2021 Бүх эрх хуулиар хамгаалагдсан —
+          <a href="https://www.facebook.com/idesign.lhagva.5/" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">iDesign Lhagva</a>
+        </p>
+        
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End -->
+<script src="js/jsfile.js"></script>
+<script>
+  // grab everything we need
+const btn = document.querySelector(".mobile-menu-button");
+const sidebar = document.querySelector(".sidebar");
+
+// add our event listener for the click
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("-translate-x-full");
+});
+btn.addEventListener("click", () => {
+  sidebar.classList.toggle("relative");
+});
+
+</script>
+<script>
+    document.addEventListener('alpine:init', () => {
+      Alpine.store('accordion', {
+        tab: 0
+      });
+      
+      Alpine.data('accordion', (idx) => ({
+        init() {
+          this.idx = idx;
+        },
+        idx: -1,
+        handleClick() {
+          this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+        },
+        handleRotate() {
+          return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+        },
+        handleToggle() {
+          return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+        }
+      }));
+    })
+  </script>
+</body>
+</html>
